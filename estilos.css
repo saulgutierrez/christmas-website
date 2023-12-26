@@ -398,3 +398,94 @@ footer .copyright {
 footer .copyright p {
     color: #fff;
 }
+
+/* Breakpoints */
+@media only screen and (max-width: 1200px) {
+    .colecciones .cards {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 30px 70px;
+    }
+
+    section .swiper .swiper-pagination {
+        right: 70px;
+    }
+
+    section .contenido h2 {
+        font-size: 5em;
+    }
+
+    section .contenido h2 span {
+        font-size: 1.2em;
+    }
+
+    section .contenido p {
+        margin-top: 25px;
+    }
+
+    .colecciones .cards {
+        flex-direction: column;
+    }
+
+    .colecciones .cards .card {
+        top: 0px;
+        position: relative;
+    }
+
+    footer {
+        padding: 70px 70px 40px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .container .enlaces,
+    footer .container .contacto,
+    footer .container .rrss {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    section .swiper .swiper-pagination {
+        right: 50px;
+    }
+
+    section .contenido {
+        max-width: 350px;
+        padding-left: 100px;
+    }
+
+    section .contenido h2 {
+        font-size: 3.5em;
+    }
+
+    section .contenido h2 span {
+        font-size: 1em;
+    }
+
+    section .contenido p {
+        padding: 15px;
+        text-align: center;
+        font-size: 0.9em;
+        margin-top: 25px;
+    }
+
+    section .contenido a {
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 50px 50px 40px;
+    }
+}
