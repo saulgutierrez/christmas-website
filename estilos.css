@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@500;700&display=swap');
+
+/* Reiniciar estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Body */
+body {
+    background: #9d0030;
+    overflow-x: hidden;
+}
+
+/* Header - Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.6em;
+    text-transform: lowercase;
+    font-family: 'Abril Fatface', cursive;
+}
+
+header .menu {
+    background: url('menu.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+header.sticky {
+    background: #9d0030;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.active .menu {
+    background: url('close.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    filter: invert(0);
+}
+
+/* Seccion Inicio */
+section .swiper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .swiper .swiper-wrapper {
+    position: relative;
+}
+
+section .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+}
+
+section .swiper .swiper-wrapper .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .swiper .swiper-pagination {
+    position: absolute;
+    right: 100px;
+}
+
+section .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 5px;
+    height: 30px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+section .contenido {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+section .contenido h2 {
+    color: #fff;
+    font-size: 7em;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    line-height: 0.7;
+}
+
+section .contenido h2 span {
+    font-family: 'Playfair Display', serif;
+    margin-left: 60px;
+    font-weight: 500;
+    font-size: 1.5em;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+section .contenido p {
+    color: #fff;
+    margin-top: 60px;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+section .contenido a {
+    margin-top: 30px;
+    background: #fff;
+    color: #9d0030;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+section .contenido a:hover {
+    letter-spacing: 3px;
+    background: #9d0030;
+    color: #fff;
+}
+
+/* Menú */
+aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #9d0030;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+aside.active {
+    transform: translateX(0%);
+}
+
+aside .nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+aside .nav li {
+    padding: 15px;
+    list-style: none;
+}
+
+aside .nav li a {
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: 0.3s;
+}
+
+aside .nav li a:hover {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+
+/* Sección Colecciones */
+.colecciones {
+    padding: 100px;
+    background: #e7cbbc;
+}
+
+.colecciones .titulo {
+    color: #9d0030;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.colecciones .titulo p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.colecciones .cards {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.colecciones .cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border: 1px solid #9d0030;
+    transition: 0.3s;
+}
+
+.colecciones .cards .card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.colecciones .cards .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.colecciones .cards .card .texto {
+    position: absolute;
+    top: 130px;
+}
+
+.colecciones .cards .card .texto p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.colecciones .cards .card:hover {
+    cursor: pointer;
+    background: #9d0030;
+    letter-spacing: 1px;
+}
+
+.colecciones .cards .card:hover .imgBox img {
+    filter: brightness(30%);
+}
+
+/* Sección Promociones */
+.promociones {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('fondo.jpg');
+    background-size: cover;
+}
+
+.promociones h2 {
+    color: #fff;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.promociones p {
+    color: #fff;
+    font-weight: 500;
+    margin: 15px;
+    text-align: center;
+}
+
+.promociones a {
+    margin-top: 15px;
+    background: #fff;
+    color: #9d0030;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.promociones a:hover {
+    letter-spacing: 3px;
+    background: #9d0030;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 100px 40px;
+}
+
+footer .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    gap: 100px;
+}
+
+footer .container .logo a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.6em;
+    text-transform: lowercase;
+    font-family: 'Abril Fatface', cursive;
+}
+
+footer .container .enlaces ul,
+footer .container .contacto ul,
+footer .container .rrss ul {
+    list-style: none;
+}
+
+footer .container .enlaces ul li,
+footer .container .contacto ul li,
+footer .container .rrss ul li {
+    padding-bottom: 10px;
+}
+
+footer .container .enlaces ul li a,
+footer .container .contacto ul li a,
+footer .container .rrss ul li a  {
+    color: #fff;
+    text-transform: lowercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+footer .container .rrss ul li ion-icon {
+    color: #fff;
+    margin-right: 10px;
+}
+
+footer .container .enlaces ul li a:hover,
+footer .container .contacto ul li a:hover,
+footer .container .rrss ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .copyright p {
+    color: #fff;
+}

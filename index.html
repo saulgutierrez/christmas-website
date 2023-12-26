@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Responsive Christmas Website</title>
+</head>
+<body>
+
+    <header>
+        <a href="" class="logo">Christmas</a>
+        <div class="menu" onclick="toggleMenu()"></div>
+    </header>
+
+    <section id="inicio">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="3.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="contenido">
+            <h2>Christmas <br> <span>Shop</span></h2>
+            <p>Todo lo que necesitas para decorar tu navidad </p>
+            <a href="">Ver más</a>
+        </div>
+    </section>
+
+    <aside>
+        <ul class="nav">
+            <li><a href="#inicio" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#colecciones" onclick="toggleMenu()">Colecciones</a></li>
+            <li><a href="#promociones" onclick="toggleMenu()">Promociones</a></li>
+        </ul>
+    </aside>
+
+    <section class="colecciones" id="colecciones">
+        <div class="titulo">
+            <h2>Colecciones</h2>
+            <p>Variedad en decoraciones, luces y nuestros más selectos árboles de navidad</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="arboles.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p>Árboles</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="adornos.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p>Adornos</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="luces.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p>Luces</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="tarjetas.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p>Tarjetas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promociones" id="promociones">
+        <h2>¡No te pierdas nuestras promociones!</h2>
+        <p>Al realizar compras al mayor, recibirás descuentos de hasta el 30% en nuestra mercancía seleccionada</p>
+        <a href="#">Ir a Promociones</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Christmas</a>
+            </div>
+            <div class="enlaces">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Promociones</a></li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <ul>
+                    <li><a href="">christmas@email.com</a></li>
+                    <li><a href="">+52 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="rrss">
+                <ul>
+                    <li><ion-icon name="logo-facebook"></ion-icon><a href="#">Facebook</a></li>
+                    <li><ion-icon name="logo-twitter"></ion-icon><a href="#">Twitter</a></li>
+                    <li><ion-icon name="logo-instagram"></ion-icon><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Saúl Gutiérrez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Ionic Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script.js -->
+    <script src="index.js"></script>
+</body>
+</html>
