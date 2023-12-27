@@ -489,3 +489,13 @@ footer .copyright p {
         padding: 50px 50px 40px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    section .contenido {
+        padding-left: 0px;
+    }
+
+    section .swiper .swiper-pagination {
+        display: none;
+    }
+}
