@@ -8,3 +8,5 @@ Technologies used:
 <li>Swiper.js</li>
 <li>Ionic Icons</li>
 <li>Google Fonts</li>
+
+![image](https://github.com/saulgutierrez/christmas-website/assets/62368834/54668dca-4e1b-48c4-8c31-2592b303dcf4)
